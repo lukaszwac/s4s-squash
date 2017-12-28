@@ -36,8 +36,8 @@ function navbarClick() {
                 "display": "flex"
             })
 
-            menuList.fadeIn(1300);
-            socialIcons.fadeIn(1700);
+            menuList.delay(250).fadeIn(1200);
+            socialIcons.delay(400).fadeIn(1000);
 
             $(this).removeClass('active')
 
@@ -99,21 +99,21 @@ function headerAnimationLarge() {
                         $('#main-header h1:first-child').delay(100).fadeIn(400);
                         $('#main-header h1:nth-child(2)').delay(300).fadeIn(400);
                         $('#main-header h1:nth-child(3)').delay(600).fadeIn(400).animate({
-                            letterSpacing: "30px"
+                            letterSpacing: "25px",
                         }, 1000);
 
                         $('#main-header h1:first-child').delay(600).animate({
-                            letterSpacing: "30px"
+                            letterSpacing: "20px",
                         }, 1000);
                         $('#main-header h1:nth-child(2)').delay(600).animate({
-                            letterSpacing: "15px"
+                            letterSpacing: "15px",
                         }, 700);
 
                         $('.header-right').delay(800).animate({
                             paddingLeft: "3%"
                         }, 700);
-                        $('.logo-line').delay(900).animate({
-                            minHeight: "80%"
+                        $('.header-line').delay(900).animate({
+                            height: "85%"
                         }, 800, function(){
                             $('#main-header .header-logo p').fadeIn(800);
                             $('#main-header .header-left').animate({
@@ -132,7 +132,7 @@ function headerAnimationLarge() {
 
 function headerAnimationMedium() {
     textAnim.animate({
-        width: '135px',
+        width: '120px',
         opacity: '1',
         letterSpacing: '3'
 
@@ -159,7 +159,7 @@ function headerAnimationMedium() {
 
                         $('#main-header h1:first-child').delay(100).fadeIn(400);
                         $('#main-header h1:nth-child(2)').delay(300).fadeIn(400);
-                        $('#main-header h1:last-child').delay(600).fadeIn(400).animate({
+                        $('#main-header h1:nth-child(3)').delay(600).fadeIn(400).animate({
                             letterSpacing: "20px"
                         }, 1000);
 
@@ -173,9 +173,14 @@ function headerAnimationMedium() {
                         $('.header-right').delay(800).animate({
                             paddingLeft: "3%"
                         }, 700);
-                        $('.logo-line').delay(900).animate({
-                            height: "80%"
-                        }, 800)
+                        $('.header-line').delay(900).animate({
+                            height: "85%"
+                        }, 800,function(){
+                            $('#main-header .header-logo p').fadeIn(800);
+                            $('#main-header .header-left').animate({
+                                opacity: '1'
+                            });
+                        })
                     }, 800)
                 })
 

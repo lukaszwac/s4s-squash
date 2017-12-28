@@ -1,3 +1,5 @@
+
+
 @media (min-width: 790px) {
     #main-header > .header-content {
         letter-spacing: 35px;
@@ -5,6 +7,11 @@
 }
 
 @media (max-width: 790px) {
+
+    #main-navbar > .menu-container > .menu-list > .menu-item > a {
+        font-size: 2.5em;
+        letter-spacing: 7px;
+    }
 
     .header-anim > .text-anim {
         font-size: 3em;
@@ -18,16 +25,20 @@
 
     #main-header > .header-left {
         order: 5;
-/*        height: 50vh;*/
     }
 
     #main-header > .header-right {
-        height: 70vh;
         padding-top: 80px;
     }
 }
 
-@media (max-width: 480px) {    
+@media (max-width: 480px) {
+
+    #main-navbar > .menu-container > .menu-list > .menu-item > a {
+        font-size: 1.8em;
+        letter-spacing: 7px;
+    }
+    
     .header-anim > .text-anim {
         font-size: 2em;
     }

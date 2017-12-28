@@ -28,9 +28,6 @@ section {
 
     background-color: #272727;
 
-    display: flex;
-    justify-content: center;
-
     overflow: hidden;
     opacity: 0;
     z-index: -10000
@@ -69,8 +66,6 @@ section {
     width: 100%;
 
     display: none;
-    justify-content: center;
-
     overflow: hidden;
 }
 
@@ -79,7 +74,12 @@ section {
 }
 
 #main-navbar > .menu-container > .menu-list {
-    align-self: center;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+    height: 100vh;
     padding: 0;
     display: none;
 }
@@ -115,20 +115,18 @@ section {
     letter-spacing: 10px;
 }
 
-#main-navbar > .menu-container > .social-icons {
+#main-navbar > .menu-container .social-icons {
     height: 80px;
     width: 100%;
-
-    position: absolute;
     bottom: 30px;
-
     padding: 0 20px;
+    margin-top: 25%;
 
     text-align: center;
     display: none;
 }
 
-#main-navbar > .menu-container > .social-icons > a {
+#main-navbar > .menu-container .social-icons > a {
     color: #f4f4f4;
     display: inline-block;
     width: 40px;
@@ -148,6 +146,7 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .header-anim {
@@ -187,20 +186,12 @@ section {
 
 #main-header .header-logo {
     padding-left: 10px;
-}
-
-.header-right .logo-line {
-    position: absolute;
-    height: 0;
-    width: 100%;
-    border-left: solid 5px #c17b25;
-    top: 40px;
-    left: 0;
+    overflow: hidden;
 }
 
 #main-header .header-content h1 {
     font-size: 3em;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 7px;
     color: #f4f4f4;
     text-transform: uppercase;
@@ -211,9 +202,8 @@ section {
 #main-header .header-logo p {
     letter-spacing: 2px;
     font-weight: 100;
-    font-size: .8em;
-    margin-top: 70px;
-    line-height: 19px;
+    margin-top: 100px;
+    line-height: 30px;
     text-align: justify;
     color: #c4c4c4;
     display: none;
@@ -221,6 +211,7 @@ section {
 
 #main-header .header-left {
     width: 40%;
+    min-height: 400px;
     position: relative;
 /*    background-image: url(../img/woman-player%20kopia.png), linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.41));*/
     background-position: center;
@@ -237,7 +228,11 @@ section {
     width: 80%;
     padding-bottom: 80%;
     
-    background-image: linear-gradient(rgba(132, 132, 132, 0.16), rgba(132, 132, 132, 0) 65%);
+    background-image: url(../img/woman-player%20kopia.png);
+    background-position: center;
+    background-size: cover;
+    
+/*    background-image: linear-gradient(rgba(132, 132, 132, 0.16), rgba(132, 132, 132, 0) 65%);*/
     
     border-radius: 100%;
 }
@@ -258,4 +253,13 @@ section {
     width: 60%;
     padding: 5% 10%;
     position: relative;
+}
+
+#main-header .header-right .header-line {
+    position: absolute;
+    top: 45px;
+    
+    height: 0;
+    border-left: solid 5px #c17b25;
+    margin-left: -11px;
 }
