@@ -34,10 +34,12 @@
 }
 
 @media (max-width: 790px) {
+/*
     #main-navbar > .menu-container > .menu-list > .menu-item > a {
         font-size: 2.5em;
         letter-spacing: 7px;
     }
+*/
 
     .header-anim > .text-anim {
         font-size: 3em;
@@ -64,26 +66,30 @@
         display: block;
         opacity: 0;
     }
-    #our-goals .line-section .line-content:first-child {
+    #main-header .header-logo p {
+        margin-top: 50px;
+    }
+    
+    .line-section .line-content:first-child {
         border: 0;
     }
-    #our-goals .line-section.closer .line-content:first-child {
+    .line-section.closer .line-content:first-child {
         border-right: 1px solid #c17b25;
     }
 
     .indicator {
         display: none;
     }
-    #our-goals .line-section .line-content.fill {
+    .line-section .line-content.fill {
         width: 100%;
         position: relative;
     }
-    #our-goals .line-section .indicator-medium {
+    .line-section .indicator-medium {
         width: 100%;
         text-align: center;
     }
 
-    #our-goals .line-section .indicator-medium div {
+    .line-section .indicator-medium div {
         display: inline-block;
         width: 14px;
         height: 14px;
@@ -91,6 +97,9 @@
         border-radius: 20px;
         border: 1px solid white;
         background-color: #272727;
+    }
+    .timeline {
+        margin-top: 40px;
     }
 
     #history .row {
@@ -119,6 +128,14 @@
     #contact .form-container form input {
         width: 100%;
     }
+    
+    #info > div {
+        width: 50%;
+    }
+    
+    #info > div:nth-child(3) {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -132,23 +149,31 @@
         margin-top: 50px
     }
     
-    #our-goals .timeline {
+    .timeline {
         margin-top: 100px;
     }
+    
+    .subsection-header h2 {
+        font-size: 1.5em;
+    }
 
-    #main-navbar > .menu-container > .menu-list > .menu-item > a {
-        font-size: 1.8em;
-        letter-spacing: 7px;
+    .menu-header div{
+        font-size: 1.7em;
     }
 
     .header-anim > .text-anim {
         font-size: 2em;
+        margin-left: 40px;
     }
 
     #main-header > .header-content {
         width: 100%;
         font-size: 0.8em;
         letter-spacing: 20px;
+    }
+    
+    #main-header .header-button {
+        margin-top: 0;
     }
     #main-header .header-content h1 {
         font-size: 2.5em;
@@ -160,7 +185,7 @@
     }
 
     .section-header h2 {
-        font-size: 1.7em;
+        font-size: 1.5em;
         letter-spacing: 18px;
     }
 
@@ -173,7 +198,11 @@
         width: 100%;
     }
     
-    .number-content .number-items .procent div:first-child {
+    .number-content .number-items .procent{
+        height: 60px;
+    }
+    
+    .number-content .number-items .procent div {
         font-size: 2em;
     }
 }

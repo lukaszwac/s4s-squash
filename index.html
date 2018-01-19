@@ -16,26 +16,31 @@
 
 </head>
 
-<body>
+<body class="max-height">
 
     <nav id="main-navbar">
-        <div class="nav-toggler active"></div>
         <div class="menu-container">
+            <div class="menu-header">
+                <div>squash for silesia</div>
+            </div>
             <ul class="menu-list">
-                <li class="menu-item"><a href="#">home</a></li>
-                <li class="menu-item"><a href="#">o nas</a></li>
-                <li class="menu-item"><a href="#">nasz cel</a></li>
-                <li class="menu-item"><a href="#">kontakt</a></li>
-                <li class="social-icons">
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-envelope-o"></i></a>
-                </li>
+                <li class="menu-item"><a href="#main-header" class="smooth">home</a></li>
+                <li class="menu-item"><a href="#about" class="smooth">o nas</a></li>
+                <li class="menu-item"><a href="#our-goals" class="smooth">nasz cel</a></li>
+                <li class="menu-item"><a href="#contact" class="smooth">kontakt</a></li>
             </ul>
-
+            <div class="menu-footer">
+                <div><a href="https://www.facebook.com/s4silesia/" target="_blank">facebook</a></div>
+                <div><a href="mailto:">mail</a></div>
+            </div>
         </div>
     </nav>
 
     <header id="main-header">
+        <div class="nav-toggler active">
+            <div class="cross-element"></div>
+            <div class="cross-element"></div>
+        </div>
         <div class="header-anim">
             <h1 class="text-anim">hello.</h1>
         </div>
@@ -65,10 +70,14 @@
                 <h1>silesia</h1>
                 <p>Nasze Stowarzyszenie powołane zostało do życia we wrześniu 2016 roku, jako formalny kontynuator grupy Silesia Squash Team, złożonej z pasjonatów gry w squasha. Naszym nadrzędnym celem jest stworzenie przestrzeni, w której można połączyć rywalizację sportową z dobrym klimatem. Squash bowiem to nie tylko sport. Squash to przede wszystkim społeczność która tworzy tą dyscyplinę, a której integracja jest Naszym kluczowym założeniem. Tworz ją razem z nami!</p>
             </div>
+            <div class="button-holder">
+                <a href="#contact" class="header-button smooth">kontakt</a>
+            </div>
+
         </div>
     </header>
 
-    <section id="about">
+    <section id="about" class="hideme">
         <div class="section-container-l">
             <div class="section-header">
                 <h3>o nas</h3>
@@ -84,15 +93,23 @@
         <div class="section-container-r"></div>
     </section>
 
-    <section id="our-numbers">
+    <section id="our-numbers" class="hideme">
         <div class="subsection-header">
             <h2>s4s w liczbach<span>.</span></h2>
             <h3>czyli czym na teraz możemy sie pochwalić.</h3>
         </div>
+        <div class="number-show">
+            <button>sprawdź!</button>
+        </div>
         <div class="number-content">
             <div class="number-items">
                 <div class="procent">
-                    <div>39</div>
+                    <div class="temp-anim">39</div>
+                    <div class="loader">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
                 <div class="procent-content">
                     <h2>członkow stowarzyszenia</h2>
@@ -100,7 +117,12 @@
             </div>
             <div class="number-items">
                 <div class="procent">
-                    <div>18</div>
+                    <div class="temp-anim">18</div>
+                    <div class="loader">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
                 <div class="procent-content">
                     <h2>turniejow Silesia Cup</h2>
@@ -108,7 +130,12 @@
             </div>
             <div class="number-items">
                 <div class="procent">
-                    <div>80</div>
+                    <div class="temp-anim">80</div>
+                    <div class="loader">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
                 <div class="procent-content">
                     <h2>średnia ilośc meczy w turnieju</h2>
@@ -116,7 +143,12 @@
             </div>
             <div class="number-items">
                 <div class="procent">
-                    <div>657</div>
+                    <div class="temp-anim">657</div>
+                    <div class="loader">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
                 <div class="procent-content">
                     <h2>zużytych piłek</h2>
@@ -125,7 +157,7 @@
         </div>
     </section>
 
-    <section id="history">
+    <section id="history" class="hideme">
         <div class="dot-content">
             <h3>co wydarzyło się?</h3>
             <div>
@@ -152,7 +184,7 @@
         </div>
     </section>
 
-    <section id="our-goals">
+    <section id="our-goals" class="hideme">
         <div>
             <div class="section-container-r">
             </div>
@@ -170,75 +202,76 @@
             </div>
 
         </div>
-        <div class="timeline">
-            <div class="line-section">
 
-                <div class="line-content"></div>
-                <div class="line-content fill">
-                    <div class="indicator-medium">
-                        <div></div>
-                    </div>
-                    <div class="indicator"></div>
-                    <div class="goal">
-                        <h2>integracja</h2>
-                        <p>Integracja środowiska amatorskiego i zawodowego poprzez kontunuację organizacji serii turniejow: HEAD S4S Silesia Cup, Summer Squash Team Cup, inne turnieje oraz wydarzenia charytatywne.</p>
-                    </div>
+    </section>
+    <section class="timeline hideme">
+        <div class="line-section">
+
+            <div class="line-content"></div>
+            <div class="line-content fill">
+                <div class="indicator-medium">
+                    <div></div>
+                </div>
+                <div class="indicator"></div>
+                <div class="goal">
+                    <h2>integracja</h2>
+                    <p>Integracja środowiska amatorskiego i zawodowego poprzez kontunuację organizacji serii turniejow: HEAD S4S Silesia Cup, Summer Squash Team Cup, inne turnieje oraz wydarzenia charytatywne.</p>
                 </div>
             </div>
-            <div class="line-section">
-                <div class="line-content fill">
-                    <div class="indicator-medium">
-                        <div></div>
-                    </div>
-                    <div class="goal">
-                        <h2>Junior</h2>
-                        <p>Wdrożenie programu juniorskiego w 2019 roku mającego na celu zbudowanie kadry młodych zdolnych oraz zaplecza trenerskiego.</p>
-                    </div>
+        </div>
+        <div class="line-section">
+            <div class="line-content fill">
+                <div class="indicator-medium">
+                    <div></div>
                 </div>
-                <div class="line-content">
-                    <div class="indicator"></div>
+                <div class="goal">
+                    <h2>Junior</h2>
+                    <p>Wdrożenie programu juniorskiego w 2019 roku mającego na celu zbudowanie kadry młodych zdolnych oraz zaplecza trenerskiego.</p>
                 </div>
             </div>
-            <div class="line-section">
-                <div class="line-content"></div>
-                <div class="line-content fill">
-                    <div class="indicator-medium">
-                        <div></div>
-                    </div>
-                    <div class="indicator"></div>
-                    <div class="goal">
-                        <h2>rozwoj</h2>
-                        <p>Stworzenie profesjonalnych rozgrywek squasha: Indywidualnych Mistrzostw Śląska oraz Profesjonalnej i Centralnej Ligi Squasha na Śląsku</p>
-                    </div>
+            <div class="line-content">
+                <div class="indicator"></div>
+            </div>
+        </div>
+        <div class="line-section">
+            <div class="line-content"></div>
+            <div class="line-content fill">
+                <div class="indicator-medium">
+                    <div></div>
+                </div>
+                <div class="indicator"></div>
+                <div class="goal">
+                    <h2>rozwoj</h2>
+                    <p>Stworzenie profesjonalnych rozgrywek squasha: Indywidualnych Mistrzostw Śląska oraz Profesjonalnej i Centralnej Ligi Squasha na Śląsku</p>
                 </div>
             </div>
-            <div class="line-section">
-                <div class="line-content fill">
-                    <div class="indicator-medium">
-                        <div></div>
-                    </div>
-                    <div class="goal">
-                        <h2>atmosfera</h2>
-                        <p>Budowa społeczności w oparciu o pozytywne relacje. Zgodnie z naszą maksymą wierzymy, że podstawą funkcjonowania dobrej społeczności są jej członkowie.</p>
-                    </div>
+        </div>
+        <div class="line-section">
+            <div class="line-content fill">
+                <div class="indicator-medium">
+                    <div></div>
                 </div>
-                <div class="line-content">
-                    <div class="indicator"></div>
+                <div class="goal">
+                    <h2>atmosfera</h2>
+                    <p>Budowa społeczności w oparciu o pozytywne relacje. Zgodnie z naszą maksymą wierzymy, że podstawą funkcjonowania dobrej społeczności są jej członkowie.</p>
                 </div>
             </div>
-            <div class="line-section closer">
-                <div class="line-content">
-                    <div class="goal">
-                    </div>
+            <div class="line-content">
+                <div class="indicator"></div>
+            </div>
+        </div>
+        <div class="line-section closer">
+            <div class="line-content">
+                <div class="goal">
                 </div>
-                <div class="line-content">
-                    <div class="indicator-end"></div>
-                </div>
+            </div>
+            <div class="line-content">
+                <div class="indicator-end"></div>
             </div>
         </div>
     </section>
 
-    <footer id="contact">
+    <footer id="contact" class="hideme">
         <div class="subsection-header">
             <h2>kontakt<span>.</span></h2>
             <h3>czyli jak najłatwiej sie z nami skontaktować</h3>
@@ -254,16 +287,17 @@
             </form>
         </div>
         <div class="social-contact">
-            <a href=""><i class="fa fa-facebook"></i></a>
-            <a href=""><i class="fa fa-envelope-o"></i></a>
+            <a href="https://www.facebook.com/s4silesia/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="mailto:"><i class="fa fa-envelope-o"></i></a>
         </div>
     </footer>
-    <section id="info">
+
+    <section id="info" class="hideme">
         <div class="adress">
             <div class="info-header">
-                <h4>znajdziesz nas:</h4>
+                <h4>znajdź nas:</h4>
             </div>
-            <div>S4S <br> Prywatna 14J <br> 41-935 Bytom</div>
+            <div><strong>S4S</strong> <br> Prywatna 14J <br> 41-935 Bytom</div>
         </div>
         <div class="get-touch">
             <div class="info-header">
